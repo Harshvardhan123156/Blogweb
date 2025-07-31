@@ -2,9 +2,6 @@ from django.shortcuts import render, HttpResponse
 from django.contrib import messages
 from .models import Contact
 
-def home(request):
-    return HttpResponse("hey this if the infrmation section.")
-
 def about(request):
     return render(request , 'info/about.html')
 
