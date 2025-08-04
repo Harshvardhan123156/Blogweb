@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %} p0st {% endblock title %}
+{% block body %}
+<h1 style="text-align:center;">Checkout some posts!</h1>
+{% for post in allposts %}
+<div class="container mt-3">
+<div class="card w-100">
+  <div class="card-body">
+    <h5 class="card-title">{{post.heading}}</h5>
+    <p class="card-text">{{post.author}}</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+</div>
+{% endfor %}
+{% endblock body %}
